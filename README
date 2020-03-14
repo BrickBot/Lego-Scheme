@@ -57,7 +57,7 @@ http://web.archive.org/web/20020803004941/http://homepages.svc.fcj.hvu.nl/brok/l
 To use this product, you must follow the following
 steps.
 
-1) Right your Scheme source code.
+1) Write your Scheme source code.
 2) Compile it to Spirit.OCX using LEGO/Scheme 
 
 C:\> petite lego_compiler.ss
