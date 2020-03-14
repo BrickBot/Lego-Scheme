@@ -1,0 +1,7 @@
+(define task_zero
+ (lambda ()
+   (set-engine-direction "01" 'forward)
+   (set-engine-speed "01" 3)
+   (set-engine-on/off "01" 'on)
+   (wait 200)
+   (set-engine-on/off "01" 'off)))

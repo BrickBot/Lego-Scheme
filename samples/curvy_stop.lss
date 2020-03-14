@@ -1,0 +1,33 @@
+(define swing-left
+  (lambda ()
+    (set-engine-on/off "0" 'off)
+    (wait 200)
+    (set-engine-on/off "0" 'on)))
+
+(define swing-right
+  (lambda ()
+    (set-engine-on/off "2" 'off)
+    (wait 200)
+    (set-engine-on/off "2" 'on)))
+
+(define task_one
+  (lambda ()
+    (let ((z (read-from-sensor 0)))
+      (if (= z #t)
+          (begin
+            (flip-engine-direction "02")
+            (task_one))
+          (task_one)))))
+
+(define task_zero
+  (lambda ()
+    (setup-sensor 0 'switch 'boolean)
+    (set-engine-direction "02" 'forward)
+    (set-engine-speed "02" 4)
+    (set-engine-on/off "02" 'on)
+    (wait 200)
+    (swing-left)
+    (wait 200)
+    (swing-right)
+    (wait 200)
+    (set-engine-on/off "02" 'off)))

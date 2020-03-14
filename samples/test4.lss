@@ -1,0 +1,41 @@
+;; Non-trivial test case.
+;; 
+;; Carrish zig zag. Left wheel is engine 0, Right wheel is engine 1
+
+(define turn-right
+  (lambda (x)
+    (let ((z (/ x 2)))
+      (set-engine-speed "1" z))
+    (wait 200)
+    (set-engine-speed "1" x)))
+
+(define turn-left
+  (lambda (x)
+    (let ((z (/ x 2)))
+      (set-engine-speed "0" z))
+    (wait 200)
+    (set-engine-speed "0" x)))
+
+(define task_one
+  (lambda ()
+    (let ((x (read-from-sensor 0)))
+      (if (= x #t)
+	  (begin
+	    (set-engine-direction "01" 'backward)
+	    (turn-right 7)
+	    (set-engine-direction "01" 'forward)
+	    (task_one))
+	  (task_one)))))
+	  
+
+(define task_zero
+  (lambda ()
+    (setup-sensor 0 'switch 'boolean)
+    (set-engine-speed "01" 7)
+    (set-engine-direction "01" 'forward)
+    (set-engine-on/off "01" 'on)
+    (wait 500)
+    (turn-right 7)
+    (wait 500)
+    (turn-left 7)
+    (set-engine-on/off "01" 'off)))

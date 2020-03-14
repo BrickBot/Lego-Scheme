@@ -1,0 +1,99 @@
+LEGO/Scheme Version 0.5.2
+Copyright (C) 1999 Adam C. Wick, Mitchell Wagner, Kasey Klipsch
+All Rights Reserved
+
+1. License
+
+We (Adam C. Wick, Mitchell Wagner, Kasey Klipsch, herinafter
+the Authors) grant you (hereinafter, Licensee) a nonexclusive
+ to use the LEGO/Scheme and assosciated documentation (hereinafter, 
+Licensed Product), to combine the Liscensed Product with other
+ products to form Aggregate Products, and to redistribute the 
+Licensed Product and/or Aggregate Products without royalty. Furthermore, 
+permission is granted to modify the source code as long as
+a notice is clearly included as to the original Authors of
+the Liscensed Product.
+
+2. Title
+
+Title, copyright and all other intellectual property rights
+for the Licensed Product remain at all times with the Authors. 
+The Licensee agrees not to alter, change, or remove from 
+the original Licensed Product any identification, including 
+copyright notices, which indicate ownership thereof by the
+Authors. Furthermore, the Licensee agrees to include clear
+indication of the original owners on any derivations of
+the source code of the Licensed Product.
+
+3. Export
+
+You may not export or re-export the Licensed Product or any
+underlying information or technology except in full compliance
+with all United States and other applicable laws and regulations
+of all applicable countries.
+
+4. Warranty
+
+THE LICENSEE ACKNOWLEDGES THAT THE LICENSED PRODUCT IS BEING
+SUPPLIED AS-IS WITHOUT ANY ACCOMPANYING SUPPORT SERVICES OR
+FUTURE UPDATES. The Authors represent that it is unaware of any
+claim or basis for any claim that the Licensed Product 
+infringes on any third party patents, copyrights or trade
+secret rights. However, CADENSE DOES NOT REPRESENT OR WARRANT
+THAT THE LICENSED PRODUCT IS FREE OF INFRINGEMENT OF ANY
+THIRD PARTY PATENTS, COPYRIGHTS, OR TRADE SECRET RIGHTS.
+Furthermore, THE AUTHORS MAKES NO WARRANTIES OR REPRESENTATIONS
+OF ANY KIND, EITHER EXPRESSED OR IMPLIED, AS TO ANY MATTER NOT
+EXPRESSLY SET FORTH HEREIN, INCLUDING BUT NOT LIMITED TO IMPLIED
+WARRANTIES OF MERCHANTABILITY OR FITNESS FOR ANY PARTICULAR
+PURPOSE.
+
+5. Limitations of Liability
+
+The Licensee agrees that the Authors shall not be held to any
+liability with respect to any claim by the Licensee or a 
+third party arising from or on account of the use of the 
+Licensed Product, regardless of the form of action, whether
+in contract or tort, including negligence. IN NO EVENT WILL
+THE AUTHORS BE LIABLE FOR CONSEQUENTIAL OR INCIDENTAL DAMAGES
+OF ANY NATURE WHATSOEVER, EVEN IF THE AUTHORS HAVE BEEN 
+ADVISED OF THE POSSIBILITY OF SUCH DAMAGES IN ADVANCE.
+
+6. Term and Termination
+
+The effective date of this Agreement shall be the date of
+the first installation of the Licensed Product by the 
+Licensee, and its term is perpetual, except that the Authors
+may terminate this Agreement if Licensee fails to comply with
+any of the terms and conditions of this Agreement. Upon
+termination, Licensee shall cease use and redistribution of
+the Licensed Product and shall destroy or return to the
+Authors all copies of the Licensed Product. Licensee's 
+oblications under Paragraph 5 shall survive any termination
+of this Agreement.
+
+7. Governing Law
+
+This Agreement shall be governed by the laws of the United
+States of America and the State of Indiana, both as to
+interpretation and performance. IT constitutes the complete
+and exclusive statement of the Agreement between the parties 
+with respect to the Licensed Product and supersedes all
+previous understandings, commitments or agreements, oral or
+written. The provisions of this Agreement are serverable, and
+in the event that any provisions of this Agreement are 
+determined to be invalid or unenforceable under any 
+controlling body of law, such invalidity or unenforceability
+shall not in any way affect the validity or enforceability
+of the remaining provisions herof. This Agreement may be 
+modified only by a written agreement executed by both the
+Authors and the Licensee.
+
+BY INSTALLING THIS SOFTWARE, YOU ACKNOWLEDGE THAT YOU HAVE
+READ THIS AGREEMENT, THAT YOU UNDERSTAND IT, AND THAT YOU
+AGREE TO BE BOUND BY ITS TERMS AND CONDITIONS.
+
+
+(acknowledgement is made by the Authors to Cadence Research
+Systems, whose License agreement was central in the creation
+of this License)

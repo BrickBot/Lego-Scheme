@@ -1,0 +1,54 @@
+
+(define try_again
+  (lambda ()
+    (set-engine-on/off "02" 'off)
+    (set-engine-direction "0" 'backward)
+    (set-engine-speed "0" 5)
+    (set-engine-speed "2" 5)
+    (set-engine-on/off "02" 'on)
+    (wait 100)
+    (set-engine-on/off "02" 'off)
+    (set-engine-speed "02" 5)
+    (set-engine-direction "0" 'forward)
+    (set-engine-on/off "02" 'on)))
+
+
+(define try_again2
+  (lambda ()
+    (set-engine-on/off "02" 'off)
+    (set-engine-direction "2" 'backward)
+    (set-engine-speed "0" 5)
+    (set-engine-speed "2" 5)
+    (set-engine-on/off "02" 'on)
+    (wait 100)
+    (set-engine-on/off "02" 'off)
+    (set-engine-speed "02" 5)
+    (set-engine-direction "0" 'forward)
+    (set-engine-on/off "02" 'on)))
+
+
+
+(define setup
+  (lambda ()
+    (setup-sensor 2 'switch 'boolean)
+    (setup-sensor 0 'switch 'boolean)
+    (set-engine-direction "02" 'forward)
+    (set-engine-speed "02" 5)
+    (set-engine-on/off "02" 'on)))
+
+(define task_one
+  (lambda () ;; main loop
+    (if (= (read-from-sensor 0) #t)
+        (begin
+          (try_again)
+          (task_one))
+        (if (= (read-from-sensor 2) #t)
+            (begin
+              (try_again2)
+              (task_one))
+            (task_one)))))
+
+(define task_zero
+  (lambda ()
+    (setup)
+    (task_one)))

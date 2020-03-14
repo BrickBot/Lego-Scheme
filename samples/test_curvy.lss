@@ -1,0 +1,23 @@
+(define swing-left
+  (lambda ()
+    (set-engine-on/off "0" 'off)
+    (wait 200)
+    (set-engine-on/off "0" 'on)))
+
+(define swing-right
+  (lambda ()
+    (set-engine-on/off "2" 'off)
+    (wait 200)
+    (set-engine-on/off "2" 'on)))
+
+(define task_zero
+  (lambda ()
+    (set-engine-direction "02" 'forward)
+    (set-engine-speed "02" 4)
+    (set-engine-on/off "02" 'on)
+    (wait 200)
+    (swing-left)
+    (wait 200)
+    (swing-right)
+    (wait 200)
+    (set-engine-on/off "02" 'off)))

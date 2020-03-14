@@ -1,0 +1,22 @@
+
+(define task_one
+  (lambda ()
+    (let ((sens_val (read-from-sensor 0)))
+      (if (= sens_val #t)
+	  (set-engine-on/off "01" 'off)
+	  (task_one)))))
+
+(define task_zero
+  (lambda ()
+    (setup-sensor 0 'switch 'boolean)
+    (set-engine-direction "01" 'forward)
+    (set-engine-speed "01" 5)
+    (set-engine-on/off "01" 'on)
+    (task_one)))
+
+;; SUBPROJECT - CONVERSION ALGORITHMS
+;; step one - yank out the tasks
+;; step two - while/loop - ify
+;; step three - register allocation
+;; step four - function removal
+                                        

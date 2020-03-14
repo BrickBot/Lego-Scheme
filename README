@@ -1,0 +1,94 @@
+LEGO/Scheme
+===========
+An implementation of Scheme for the Lego MindStorms RCX
+
+Version 0.5.2
+Copyright (C) 1999 Adam C. Wick, Mitchell Wagner, Kasey Klipsch
+All Rights Reserved.
+
+Archive of Original Website
+ – http://web.archive.org/web/20060902030805/http://www.cs.indiana.edu/~mtwagner/legoscheme/
+
+
+BY READING THIS FILE OR USING THIS SOFTWARE, YOU HAVE AGREED
+TO THE TERMS AND CONDITIONS AS EXPRESSED IN THE FILE "LICENSE".
+
+
+1. System Requirements
+----------------------
+
+o Chez Scheme or Petite Chez Scheme Version 6.0 or higher
+o Lego MindStorms Robotics Kit
+o Visual Basic (included lite version is sufficient)
+o Windows ('95, '98, 'NT)
+o The Lego MindControl ToolKit
+
+
+2. Availability
+---------------
+
+The LEGO/Scheme compiler is available at:
+http://www.cs.indiana.edu/~mtwagner/legoscheme/
+
+Chez Scheme and Petite Chez Scheme are trademarks of
+Cadence Research Systems. Pricing information for
+Chez Scheme and the Petite Chez Scheme system are
+available at:
+http://www.scheme.com
+
+The Lego MindStorms Robotics Kit is a trademark of
+the Lego Group. See http://www.legomindstorms.com
+for more information.
+
+Visual Basic, Windows '95, Windows '98, and Windows
+NT are trademarks of Microsoft. For more information
+see http://www.microsoft.com
+
+The Lego MindControl ToolKit is availible at:
+http://homepages.svc.fcj.hvu.nl/brok/legomind/robo/
+
+Archived version:
+http://web.archive.org/web/20020803004941/http://homepages.svc.fcj.hvu.nl/brok/legomind/robo/
+
+
+3. USAGE
+--------
+
+To use this product, you must follow the following
+steps.
+
+1) Right your Scheme source code.
+2) Compile it to Spirit.OCX using LEGO/Scheme 
+
+C:\> petite lego_compiler.ss
+<information on usage and copyright notices>
+> (lego-compile <Scheme file> <output file>
+> (exit)
+
+3) Copy the output file to the mindcontrol directory
+4) Load mindcontrol
+5) Dump the file into the robot
+
+
+4. CONTACTING INFORMATION
+-------------------------
+
+You are free to contact us for any further information,
+however we are all full-time college students and have
+many, many other things to do. We do not currently
+plan to do any revisions of this compiler beyond what we 
+can do in a ten-minute sitting. 
+
+The Authors:
+Kasey Klipsch
+http://www.cs.indiana.edu/~kklipsch/
+kklipsch@indiana.edu
+
+Mitchell Wagner
+http://www.cs.indiana.edu/~mtwagner/
+mtwagner@indiana.edu
+
+Adam C. Wick
+http://www.cs.indiana.edu/~awick/
+awick@acm.org
+

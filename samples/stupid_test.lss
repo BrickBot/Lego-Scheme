@@ -1,0 +1,15 @@
+(letrec ((task_one (lambda ()
+		     (set-engine-on/off "012" 'on)
+		     (task_two 2)
+		     (set-engine-on/off "012" 'off)))
+	 (task_two (lambda (x)
+		     (if (= x 0) 0
+			 (begin
+			   (wait 100)
+			   (flip-engine-direction "012")
+			   (task_two (- x 1)))))))
+  (setup-sensor 0 'switch 'boolean)
+  (read-from-sensor 0)
+  (set-engine-direction "012" 'forward)
+  (set-engine-speed "012" 7)
+  (task_one))
